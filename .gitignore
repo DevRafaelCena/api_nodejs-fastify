@@ -2,3 +2,5 @@ node_modules
 build
 dist
 tmp
+.env
+db/db.sqlite
