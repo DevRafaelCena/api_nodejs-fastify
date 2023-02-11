@@ -1,6 +1,7 @@
 import fastify from 'fastify'
 import { knex } from './database'
 import crypto from 'crypto'
+import { env } from './env'
 
 const app = fastify()
 
@@ -17,7 +18,7 @@ app.get('/', async (request, reply) => {
   return { hello: 'world' }
 })
 
-app.listen({ port: 3000 }, (err, address) => {
+app.listen({ port: env.PORT }, (err, address) => {
   if (err) {
     console.error(err)
   }
