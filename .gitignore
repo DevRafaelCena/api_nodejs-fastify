@@ -3,4 +3,7 @@ build
 dist
 tmp
 .env
+.env.test
 db/db.sqlite
+db/db_app.sqlite
+db/db_teste.sqlite
